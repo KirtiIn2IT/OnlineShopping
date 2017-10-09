@@ -9,12 +9,6 @@ pipeline {
     stage('Browser Tests') {
       steps {
         parallel(
-          "Firefox": {
-            bat 'echo Browser Test'
-            bat 'echo Firefox'
-            bat 'echo  MyTest'
-            
-          },
           "Safari": {
             bat 'echo Safari'
             
@@ -25,6 +19,10 @@ pipeline {
           },
           "Internet Explorer": {
             bat 'echo IE'
+            
+          },
+          "Firefox": {
+            bat 'echo Firefox'
             
           }
         )
