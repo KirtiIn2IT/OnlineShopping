@@ -12,7 +12,6 @@ pipeline {
           "Firefox": {
             bat 'echo Browser Test'
             bat 'echo Firefox'
-            bat 'SDsadadas'
             
           },
           "Safari": {
